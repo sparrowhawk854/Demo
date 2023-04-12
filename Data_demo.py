@@ -1,6 +1,8 @@
+pip install snowflake-connector-python
+
 import streamlit as st
 import snowflake.connector
-import snowflake-connector-python
+
 import pandas as pd
 import altair as alt
 
