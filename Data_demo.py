@@ -5,13 +5,14 @@ import altair as alt
 
 # Set up Snowflake connection
 conn = snowflake.connector.connect(
-    user='<Hamburger>',
-    password='<NumNumNum99>',
-    account='<australia-east.azure/pt11496>',
-    warehouse='<snowflake>',
-    database='<snowflake_sample_data>',
-    schema='<TPCH_SF1>'
-
+    user='Hamburger',
+    password='NumNumNum99',
+    #account='australia-east.azure/pt11496',
+    account='app.snowflake.com/australia-east.azure/pt11496',
+    warehouse='COMPUTE_WH',
+    database='SNOWFLAKE_SAMPLE_DATA',
+    schema='TPCH_SF1'
+)
 
 # Set the title of the app
 st.title("Hamburgler")
